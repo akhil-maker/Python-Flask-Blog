@@ -71,7 +71,7 @@ def home():
         next = "/?page=" + str(page + 1)
 
 
-    return render_template('index.html', params = params, posts=posts)
+    return render_template('index.html', params = params, posts=posts, prev=prev, next=next)
 
 @app.route("/post/<string:post_slug>", methods = ['GET'])
 def post_route(post_slug):
