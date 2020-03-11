@@ -63,7 +63,7 @@ def home():
     if(page==1):
         prev = "#"
         next = "/?page="+ str(page+1)
-    elif(page===last):
+    elif(page==last):
         prev = "/?page=" + str(page-1)
         next = "#"
     else:
